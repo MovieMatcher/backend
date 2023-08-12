@@ -23,6 +23,5 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path("", include(router.urls)),
     path("admin/", admin.site.urls),
-    path("auth/", include("djoser.urls")),
-    path("auth/", include("djoser.urls.authtoken")),
+    path("accounts/", include("allauth.urls")),
 ]
